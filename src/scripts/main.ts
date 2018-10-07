@@ -19,3 +19,5 @@ module Shapes {
 var p: IPoint = new Shapes.Point(3, 4);
 
 var dist = p.getDist();
+
+console.log('Point: ' + dist);
