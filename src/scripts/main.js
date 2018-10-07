@@ -1,16 +1,15 @@
 var Shapes;
 (function (Shapes) {
-    var Point = /** @class */ (function () {
-        function Point(x, y) {
+    class Point {
+        constructor(x, y) {
             this.x = x;
             this.y = y;
         }
-        Point.prototype.getDist = function () {
+        getDist() {
             return Math.sqrt(this.x * this.x + this.y * this.y);
-        };
-        Point.origin = new Point(0, 0);
-        return Point;
-    }());
+        }
+    }
+    Point.origin = new Point(0, 0);
     Shapes.Point = Point;
 })(Shapes || (Shapes = {}));
 var p = new Shapes.Point(3, 4);
